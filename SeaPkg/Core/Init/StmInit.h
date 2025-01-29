@@ -34,7 +34,7 @@ extern SEA_HOST_CONTEXT_COMMON  mHostContextCommon;
 #if !defined (MDEPKG_NDEBUG)
 #define SAFE_DEBUG(Expression)        \
     do {                           \
-      if (DebugPrintEnabled ()) {  \
+      if (FALSE) {  \
         AcquireSpinLock (&mHostContextCommon.DebugLock); \
         _DEBUGLIB_DEBUG (Expression);       \
         ReleaseSpinLock (&mHostContextCommon.DebugLock); \
